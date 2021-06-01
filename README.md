@@ -72,9 +72,8 @@ analyse.R
 Then 
 
 3. `finalanalysis.R` does the final analysis and produces the figures as presented in the report. One can either run this script independently from `simulate.R` and `analysis.R` using the public data that is included (`publicdata`), or use their own results e.g. produced by executing the scripts `simulate.R` and `analysis.R`. In the latter case, one needs to modify the paths in `finalanalysis.R`. Note that, to obtain the output plots in the console, one should source the script with echo, i.e.
-    
 
-      > source('R/scripts/finalanalysis.R', echo=TRUE)
+    > source('R/scripts/finalanalysis.R', echo=TRUE)
 
 Note that all parameter values that were used in the report are listed in the report together with the motivation for the values, and are provided in the code repository, so all results can be reproduced without any additional inputs. 
 
