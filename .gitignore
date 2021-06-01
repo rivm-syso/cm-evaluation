@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rbuildignore
+.idea
+.vs
+
+# data or result directories or files
+data
+documents
+figs
+results*
+figures
+
+*.png
