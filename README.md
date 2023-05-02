@@ -10,6 +10,11 @@ b. the scripts to reproduce the simulation results, including all the chosen par
 
 c. the implementation of the contact tracing model 
 
+d. the code to produce the figures from the simulation results
+
+  i. for the Dutch public report `R/scripts/finalanalysis.R`
+  ii. for the English scientific publication `R/scripts/figures_article.R`
+
 All code has been written in the programming language [R](https://www.r-project.org/about.html); see [Requirements](#requirements) for detailed specification.
 
 ## <a name = "overview"></a> Overview
