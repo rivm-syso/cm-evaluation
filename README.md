@@ -1,6 +1,6 @@
 # Coronamelder evaluation 
 
-This repository contains the code developed and used for the evaluation of the Coronamelder (CM), the Dutch covid digital contact tracing app. The public report (in Dutch) that the codebase is part of is RIVM (2021) CoronaMelder: modelstudie naar effectiviteit - Digitaal contactonderzoek in de bestrijding van COVID-19 RIVM-briefrapport 2021-0092 and can be found [here](https://doi.org/10.21945/RIVM-2021-0092). 
+This repository contains the code developed and used for the evaluation of the Coronamelder (CM), the Dutch covid digital contact tracing app. The public report (in Dutch) that the codebase is part of is RIVM (2021) CoronaMelder: modelstudie naar effectiviteit - Digitaal contactonderzoek in de bestrijding van COVID-19 RIVM-briefrapport 2021-0092 and can be found [here](https://doi.org/10.21945/RIVM-2021-0092). An English scientific article is available as preprint [here](https://doi.org/10.1101/2023.06.15.23291010).
 
 The repository contains 
 
