@@ -105,7 +105,7 @@ p1A <- plotinput %>%
   coord_fixed() +
   theme_void() +
   facet_wrap(~scenario)
-# ggsave("results/figures/Article_F1A.png", width = 7, height = 5, units = "cm", dpi = 1200)
+# ggsave("results/figures_revised/Article_F1A.png", width = 7, height = 5, units = "cm", dpi = 1200)
 
 ### make figure 3B ###
 p1B <- plotinput %>%
@@ -125,7 +125,7 @@ p1B <- plotinput %>%
   guides(fill = "none", color = "none") +
   theme_void() +
   facet_wrap(~scenario, nrow = 1)
-# ggsave("results/figures/Article_F1B.png", width = 9, height = 5, units = "cm", dpi = 1200)
+# ggsave("results/figures_revised/Article_F1B.png", width = 9, height = 5, units = "cm", dpi = 1200)
 
 ### make figure 3C => adjusted for Epidemics poster
 p1C <- plotinput %>%
@@ -167,7 +167,7 @@ p1C <- plotinput %>%
   theme_void() +
   facet_wrap(~scenario, nrow = 2) +
   theme(strip.text = element_text(size = 9))
-# ggsave("results/figures/Article_F1C.png", width = 16, height = 7, units = "cm", dpi = 1200)
+# ggsave("results/figures_revised/Article_F1C.png", width = 16, height = 7, units = "cm", dpi = 1200)
 
 
 plot_grid(
@@ -179,8 +179,8 @@ plot_grid(
   rel_heights = c(5, 7),
   labels = c("", "c")
 )
-ggsave("results/figures/Fig1.png", bg = "white", width = 20, height = 15, units = "cm", dpi = 1200)
-ggsave("results/figures/Fig1.jpg", bg = "white", width = 20, height = 15, units = "cm", dpi = 1200)
+ggsave("results/figures_revised//Fig1.png", bg = "white", width = 20, height = 15, units = "cm", dpi = 1200)
+ggsave("results/figures_revised/Fig1.jpg", bg = "white", width = 20, height = 15, units = "cm", dpi = 1200)
 
 
 
@@ -189,8 +189,8 @@ p2A <- plotinput %>%
   filter(scenario %in% c("current", "futureBCO", "futurenoBCO"), appusage == "16") %>%
   mutate(scenario = recode(scenario, 
                            "current" = "Baseline parameter set",
-                           "futureBCO" = "Future: less effective\nmanual tracing",
-                           "futurenoBCO" = "Future: no\nmanual tracing"),
+                           "futureBCO" = "Scenario: less effective\nmanual tracing",
+                           "futurenoBCO" = "Scenario: no\nmanual tracing"),
          appnotifier = factor(appnotifier, levels = c("appGGD", "appself")),
          appnotifier = recode(appnotifier,
                               "appGGD" = "app-notification\nby authorities\n",
@@ -213,15 +213,15 @@ p2A <- plotinput %>%
   theme_void() +
   facet_grid(appnotifier~scenario, switch = "y") +
   theme(strip.text.y.left = element_text(angle = 90))
-# ggsave("results/figures/Article_F2A.png", width = 16, height = 7, units = "cm", dpi = 1200)
+# ggsave("results/figures_revised/Article_F2A.png", width = 16, height = 7, units = "cm", dpi = 1200)
 
 # make figure 4B => adjusted for Epidemics poster
 p2B <- plotinput %>%
   filter(scenario %in% c("current", "futureBCO", "futurenoBCO"), wh != "4", appusage != "50") %>%
   mutate(scenario = recode(scenario, 
                            "current" = "Baseline parameter set",
-                           "futureBCO" = "Future: less effective\nmanual tracing",
-                           "futurenoBCO" = "Future: no\nmanual tracing"),
+                           "futureBCO" = "Scenario: less effective\nmanual tracing",
+                           "futurenoBCO" = "Scenario: no\nmanual tracing"),
          appnotifier = factor(appnotifier, levels = c("appGGD", "appself")),
          appnotifier = recode(appnotifier,
                               "appGGD" = "app-notification\nby authorities",
@@ -247,7 +247,7 @@ p2B <- plotinput %>%
   theme(legend.position = "none",
         strip.text = element_text(size = 9)) +
   facet_grid(appnotifier ~ scenario) 
-# ggsave("results/figures/Article_F2B.png", width = 16, height = 9, units = "cm", dpi = 1200)
+# ggsave("results/figures_revised/Article_F2B.png", width = 16, height = 9, units = "cm", dpi = 1200)
 
 
 plot_grid(
@@ -256,5 +256,5 @@ plot_grid(
   rel_heights = c(7, 9),
   labels = c("a", "b")
 )
-ggsave("results/figures/Fig2.png", bg = "white", width = 20, height = 20, units = "cm", dpi = 1200)
-ggsave("results/figures/Fig2.jpg", bg = "white", width = 20, height = 20, units = "cm", dpi = 1200)
+ggsave("results/figures_revised/Fig2.png", bg = "white", width = 20, height = 20, units = "cm", dpi = 1200)
+ggsave("results/figures_revised/Fig2.jpg", bg = "white", width = 20, height = 20, units = "cm", dpi = 1200)
